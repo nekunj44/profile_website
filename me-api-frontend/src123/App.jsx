@@ -6,7 +6,7 @@ function App() {
 
   const fetchData = async (endpoint, setter) => {
     try {
-      const res = await fetch(`http://localhost:5000${endpoint}`);
+      const res = await fetch(`https://profile-website-wfph.onrender.com`);
       if (!res.ok) throw new Error("Network error");
       const data = await res.json();
       console.log("Fetched:", data);  // Debug log
