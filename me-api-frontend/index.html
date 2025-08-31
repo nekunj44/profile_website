@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Predusk Evaluation</title>
+</head>
+<body>
+  <h1>Profile - Nekunj Khanna</h1>
+  <button onclick="getProfile()">View Profile</button>
+  <button onclick="getProjects()">List Projects</button>
+  <input id="search" placeholder="Search..."/>
+  <button onclick="search()">Search</button>
+
+  <pre id="output"></pre>
+
+  <script>
+    const API_URL = "https://your-backend.onrender.com";
+
+    async function getProfile() {
+      let res = await fetch(`${API_URL}/profile`);
+      document.getElementById("output").textContent = JSON.stringify(await res.json(), null, 2);
+    }
+
+    async function getProjects() {
+      let res = await fetch(`${API_URL}/projects`);
+      document.getElementById("output").textContent = JSON.stringify(await res.json(), null, 2);
+    }
+
+    async function search() {
+      let q = document.getElementById("search").value;
+      let res = await fetch(`${API_URL}/search?q=${q}`);
+      document.getElementById("output").textContent = JSON.stringify(await res.json(), null, 2);
+    }
+  </script>
+</body>
+</html>
