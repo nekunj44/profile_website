@@ -60,6 +60,33 @@ This project follows a **monorepo structure**, separating the backend and fronte
 
 ![Screenshot of the projects list](./output2.png)
 
+## 5. Tech Stack
+
+### Backend
+
+- Language: Python 3.9  
+- Framework: FastAPI (high-performance ASGI framework with Swagger UI)  
+- Server: Uvicorn (ASGI server for FastAPI in production)  
+- Database Driver: Motor (async driver for MongoDB)  
+
+### Frontend
+
+- Technologies: Vanilla HTML5, CSS3, JavaScript (ES6+)  
+- Notes: No external frameworks/libraries, API calls made using fetch API  
+
+### Database
+
+- Database: MongoDB (NoSQL, document-oriented, scalable)  
+- Hosting: MongoDB Atlas (fully managed cloud DBaaS)  
+
+### Hosting
+
+- Hosting Platform: Render (backend as Web Service, frontend as Static Site)  
+- Version Control: Git & GitHub (source code management + CI/CD with Render)  
+
+
+
+
 
 
 
