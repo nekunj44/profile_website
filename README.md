@@ -54,6 +54,13 @@ This project follows a **monorepo structure**, separating the backend and fronte
 ## 4. Database Schema
 - Already Attached to the folder
 
+## 5. Outputs
+
+![Screenshot of the user profile card](./output1.png)
+
+![Screenshot of the projects list](./output2.png)
+
+
 
 
 
